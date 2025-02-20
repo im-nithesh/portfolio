@@ -6,8 +6,12 @@
 
         <title>Nithesh Portfolio</title>
         <link rel="icon" type="image/x-icon" href="/assets/images/favico.jpeg">
-        <link rel="stylesheet" href="/assets/css/style.css">
+
+        <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css" >
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" integrity="sha512-cn16Qw8mzTBKpu08X0fwhTSv02kK/FojjNLz0bwp2xJ4H+yalwzXKFw/5cLzuBZCxGWIA+95X4skzvo8STNtSg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="/vendor/aos/aos.css">
+
+        <link rel="stylesheet" href="/assets/css/style.css">
     </head>
 		
     <body>
@@ -26,11 +30,11 @@
         </header>
         
         <section class="home section" id="home">
-            <div class="home-img">
+            <div class="home-img" data-aos="fade">
                 <img src="/assets/images/img-1.png" alt="">
             </div>
             
-            <div class="home-content">
+            <div class="home-content" data-aos="fade-right" data-aos-delay="300">
                 <h1>Hi, It's <span>Nithesh</span></h1>
                 <h3 class="text-animation">I'm a <span></span> </h3>
                     <p>👋 I’m Nithesh Mohan, a seasoned Full-Stack Web Developer. I specialize in creating pixel-perfect websites and have a keen eye for crafting captivating online experiences. My passion lies in creating visual identities that resonate deeply with clients.<br>
@@ -46,7 +50,7 @@
         </section>
 
         <section class="about section" id="about">
-            <div class="about-content">
+            <div class="about-content" data-aos="fade-right" data-aos-delay="300">
                 <h2 class="heading">About <span>Me</span></h2>
                 <p>👋 Hello! I’m Nithesh Mohan, a seasoned Full-Stack Web Developer with aflair for crafting captivating online experiences. Currently, I wield my digital magic wand as a Freelancer based in Chennai.<br>
                     <br>🌐 In my toolkit, you’ll find Python, Django, HTML5, CSS3, JavaScript, MySQL, Canva, WordPress, and Adobe Photoshop. These are my trusty companions as I weave pixel-perfect websites and breathe life into digital realms.<br>
@@ -63,7 +67,7 @@
                 </ul>
                 
             </div>
-            <div class="about-r-content">
+            <div class="about-r-content" data-aos="zoom-in">
                 <div class="about-img">
                     <img src="/assets/images/img-2.jpeg" alt="">
                 </div>
@@ -72,9 +76,9 @@
         </section>
 
         <section class="services section" id="services">
-            <h2 class="heading">Services</h2>
+            <h2 class="heading" data-aos="fade-up" data-aos-offset="-100">Services</h2>
             <div class="services-container">
-                <div class="services-box">
+                <div class="services-box" data-aos="fade-up" data-aos-delay="100">
                     <div class="service-item">
                         <div class="imgbox">
                             <img src="/assets/images/web-developer.gif" alt="">
@@ -93,7 +97,7 @@
                     </div>
                 </div>
 
-                <div class="services-box">
+                <div class="services-box" data-aos="fade-up" data-aos-delay="200">
                     <div class="service-item">
                         <div class="imgbox">
                             <img src="/assets/images/layout.gif" alt="">
@@ -112,7 +116,7 @@
                     </div>
                 </div>
 
-                <div class="services-box">
+                <div class="services-box" data-aos="fade-up" data-aos-delay="300">
                     <div class="service-item">
                         <div class="imgbox">
                             <img src="/assets/images/seo.gif" alt="">
@@ -133,97 +137,188 @@
         
         <section class="projects section" id="projects">
             <div class="projects-box">
-                <h2 class="heading">Projects</h2>
+                <h2 class="heading" data-aos="fade-up" data-aos-offset="-100">Projects</h2>
 
                 <div class="wrapper">
-                    <!-- Taxi Rental App -->
-                     <a href="https://www.aesthetic-designs.in/" target="_blank">
-                        <div class="project-item">
-                            <img src="/assets/images/ad.png" alt="">
-                            <div class="project-details">
-                                <h2>Aesthetic Designs | 2024</h2>
-                                <p>The interior design firm entrusted me with their digital presence. As a Web Developer, I crafted a sleek website that mirrors their design philosophy & showcases their portfolio. Explore their projects, client testimonials, and the latest trends in interior design.</p>
+                    <div class="tabs-content">
+                        <div class="nav-wrapper" data-aos="zoom-in" data-aos-offset="-50">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="website-tab" data-bs-toggle="tab" data-bs-target="#website" type="button" role="tab" aria-controls="website" aria-selected="true">Websites</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="logo-tab" data-bs-toggle="tab" data-bs-target="#logo" type="button" role="tab" aria-controls="logo" aria-selected="false">Logos</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="other-tab" data-bs-toggle="tab" data-bs-target="#other" type="button" role="tab" aria-controls="other" aria-selected="false">Others</button>
+                                </li>
+                            </ul>
+                        </div>   
+        
+                        <div class="tab-content" id="myTabContent">
+                            <!-- Start Website Projects -->
+                            <div class="tab-pane fade show active" id="website" role="tabpanel" aria-labelledby="website-tab">
+                                <div class="tab-items">
+                                    <a href="https://www.aesthetic-designs.in/" target="_blank">
+                                        <div class="project-item">
+                                            <img src="/assets/images/projects/website/ad.png" alt="">
+                                            <div class="project-details">
+                                                <h2>Aesthetic Designs | 2024</h2>
+                                                <p>The interior design firm entrusted me with their digital presence. As a Web Developer, I crafted a sleek website that mirrors their design philosophy & showcases their portfolio. Explore their projects, client testimonials, and the latest trends in interior design.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="https://sreevidyaseniorcare.com/" target="_blank">
+                                        <div class="project-item">
+                                            <img src="/assets/images/projects/website/SVSC.png" alt="">
+                                            <div class="project-details">
+                                                <h2>Sree Vidya Senior Care | 2024</h2>
+                                                <p>As a Web Developer, I crafted an elegant and user-friendly senior care website. This digital platform highlights the services, facilities, and compassionate care provided by the organization. Visitors can explore & stay updated with senior care news and events.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="http://adconstruction.org.in/" target="_blank">
+                                        <div class="project-item">
+                                            <img src="/assets/images/projects/website/adc.jpg" alt="">
+                                            <div class="project-details">
+                                                <h2>AD Constructions | 2024</h2>
+                                                <p>As a Web Developer, I orchestrated the digital blueprint for AD Construction. This virtual cornerstone showcases their craftsmanship, portfolio, and commitment to excellence. Explore their projects, testimonials, and industry insights</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="https://thefatek.in/" target="_blank">
+                                        <div class="project-item">
+                                            <img src="/assets/images/projects/website/fatek.png" alt="">
+                                            <div class="project-details">
+                                                <h2>FATEK Store | 2024</h2>
+                                                <p>I launched an exclusive online store for personalized tote bags and T’s. Customers can browse & customize products, view detailed descriptions, & make secure purchases. Explore unique designs, customer reviews, & the latest trends in personalized fashion.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="https://getuptrust.org/" target="_blank">
+                                        <div class="project-item">
+                                            <img src="/assets/images/projects/website/getuptrust.png" alt="">
+                                            <div class="project-details">
+                                                <h2>GET-UP Trust | 2024</h2>
+                                                <p>The Get-Up Trust entrusted me with their digital presence. As a Web Developer, I crafted a dynamic website that mirrors their mission: empowering communities through education and social initiatives. Explore their story, events, and impact.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="https://momscoffeehouse.com/" target="_blank">
+                                        <div class="project-item">
+                                            <img src="/assets/images/projects/website/momscoffeehouse.jpg" alt="">
+                                            <div class="project-details">
+                                                <h2>Mom’s Coffee House | 2023</h2>
+                                                <p>At Mom’s Coffee House, I brewed more than just java. I crafted an inviting online nook where caffeine meets community. From aromatic menus to cozy ambiance, every pixel whispers “Welcome home.” Explore their blends, events, and heartfelt testimonials.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.smebazaar.co.in/" target="_blank">
+                                        <div class="project-item">
+                                            <img src="/assets/images/projects/website/smebazaar.jpg" alt="">
+                                            <div class="project-details">
+                                                <h2>SME Bazaar | 2023</h2>
+                                                <p>At SME Bazaar, I wove digital threads into a vibrant marketplace for SMEs and MSMEs. I orchestrated a seamless ecosystem—offering business loans, insurance, rating advisory, compliance guidance, and more. Explore their marketplace where entrepreneurs thrive.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.bmlindia.com/" target="_blank">
+                                        <div class="project-item">
+                                            <img src="/assets/images/projects/website/bmlindia.jpg" alt="">
+                                            <div class="project-details">
+                                                <h2>BML India | 2023</h2>
+                                                <p>BML India is a demerger from Binny Limited, It engages in the business of trading textiles and engineering products. I crafted a dynamic platform where cutting-edge technology meets business solutions. Explore their insights, and client success stories.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="https://repairworks.in/" target="_blank">
+                                        <div class="project-item">
+                                            <img src="/assets/images/projects/website/repairworks.png" alt="">
+                                            <div class="project-details">
+                                                <h2>Repair Works | 2023</h2>
+                                                <p>Repair Works is revolutionizing the repair business with advanced cloud-based POS software. I developed their website, where customers explore innovative features, client success stories, and seamless tech-business solutions.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                    </a>
 
-                    <!--Nimesa Landing Page  -->
-                    <a href="https://sreevidyaseniorcare.com/" target="_blank">
-                        <div class="project-item">
-                            <img src="/assets/images/SVSC.png" alt="">
-                            <div class="project-details">
-                                <h2>Sree Vidya Senior Care | 2024</h2>
-                                <p>As a Web Developer, I crafted an elegant and user-friendly senior care website. This digital platform highlights the services, facilities, and compassionate care provided by the organization. Visitors can explore & stay updated with senior care news and events.</p>
-                            </div>
-                        </div>
-                    </a>
+                            <!-- Start Logo Projects -->
+                            <div class="tab-pane fade" id="logo" role="tabpanel" aria-labelledby="logo-tab">
+                                <div class="tab-items">
+                                    <div class="project-item">
+                                        <img src="/assets/images/projects/logo/adc.png" alt="">
+                                    </div>
 
-                    <!-- Food Blog Website -->
-                    <a href="http://adconstruction.org.in/" target="_blank">
-                        <div class="project-item">
-                            <img src="/assets/images/adc.jpg" alt="">
-                            <div class="project-details">
-                                <h2>AD Constructions | 2024</h2>
-                                <p>As a Web Developer, I orchestrated the digital blueprint for AD Construction. This virtual cornerstone showcases their craftsmanship, portfolio, and commitment to excellence. Explore their projects, testimonials, and industry insights</p>
-                            </div>
-                        </div>
-                    </a>
+                                    <div class="project-item w-bg">
+                                        <img src="/assets/images/projects/logo/fatek-logo.png" alt="">
+                                    </div>
 
-                   <!--Perfume App  -->
-                    <a href="https://momscoffeehouse.com/" target="_blank">
-                        <div class="project-item">
-                            <img src="/assets/images/momscoffeehouse.jpg" alt="">
-                            <div class="project-details">
-                                <h2>Mom’s Coffee House | 2023</h2>
-                                <p>At Mom’s Coffee House, I brewed more than just java. I crafted an inviting online nook where caffeine meets community. From aromatic menus to cozy ambiance, every pixel whispers “Welcome home.” Explore their blends, events, and heartfelt testimonials.</p>
-                            </div>
-                        </div>
-                    </a>
+                                    <div class="project-item">
+                                        <img src="/assets/images/projects/logo/logo-sme.png" alt="">
+                                    </div>
 
-                    <!-- Water Bottle branding animation -->
-                    <a href="https://www.smebazaar.co.in/" target="_blank">
-                        <div class="project-item">
-                            <img src="/assets/images/smebazaar.jpg" alt="">
-                            <div class="project-details">
-                                <h2>SME Bazaar | 2023</h2>
-                                <p>At SME Bazaar, I wove digital threads into a vibrant marketplace for SMEs and MSMEs. I orchestrated a seamless ecosystem—offering business loans, insurance, rating advisory, compliance guidance, and more. Explore their marketplace where entrepreneurs thrive.</p>
-                            </div>
-                        </div>
-                    </a>
+                                    <div class="project-item w-bg">
+                                        <img src="/assets/images/projects/logo/mch-Logo.webp" alt="">
+                                    </div>
 
-                    <!-- Ninza Landing Page -->
-                    <a href="https://www.bmlindia.com/" target="_blank">
-                        <div class="project-item">
-                            <img src="/assets/images/bmlindia.jpg" alt="">
-                            <div class="project-details">
-                                <h2>BML India | 2023</h2>
-                                <p>BML India is a demerger from Binny Limited, It engages in the business of trading textiles and engineering products. I crafted a dynamic platform where cutting-edge technology meets business solutions. Explore their insights, and client success stories.</p>
-                            </div>
-                        </div>
-                    </a>
+                                    <div class="project-item w-bg">
+                                        <img src="/assets/images/projects/logo/stallseeker-1.png" alt="">
+                                    </div>
 
-                    <!-- Modliz Redesign Site -->
-                    <a href="https://thefatek.in/" target="_blank">
-                        <div class="project-item">
-                            <img src="/assets/images/underconstruction.png" alt="">
-                            <div class="project-details">
-                                <h2>FATEK Store | 2024</h2>
-                                <p>I launched an exclusive online store for personalized tote bags and T’s. Customers can browse & customize products, view detailed descriptions, & make secure purchases. Explore unique designs, customer reviews, & the latest trends in personalized fashion.</p>
-                            </div>
-                        </div>
-                    </a>
+                                    <div class="project-item w-bg">
+                                        <img src="/assets/images/projects/logo/stallseeker-2.png" alt="">
+                                    </div>
 
-                    <!-- Remote Productivity App -->
-                    <a href="https://getuptrust.org/" target="_blank">
-                        <div class="project-item">
-                            <img src="/assets/images/underconstruction.png" alt="">
-                            <div class="project-details">
-                                <h2>GET-UP Trust | 2024</h2>
-                                <p>The Get-Up Trust entrusted me with their digital presence. As a Web Developer, I crafted a dynamic website that mirrors their mission: empowering communities through education and social initiatives. Explore their story, events, and impact.</p>
+                                    <div class="project-item">
+                                        <img src="/assets/images/projects/logo/sv_care.png" alt="">
+                                    </div>
+
+                                    <div class="project-item">
+                                        <img src="/assets/images/projects/logo/sv_care_full.png" alt="">
+                                    </div>
+
+                                    <div class="project-item">
+                                        <img src="/assets/images/projects/logo/yumillet.png" alt="">
+                                    </div>
+                                </div>
                             </div>
+
+                            <!-- Start Other Projects -->
+                            <div class="tab-pane fade" id="other" role="tabpanel" aria-labelledby="other-tab">
+                                <div class="tab-items">
+                                    <div class="project-item">
+                                        <img src="/assets/images/projects/other/bhanu_nameplate.jpg" alt="">
+                                    </div>
+
+                                    <div class="project-item">
+                                        <img src="/assets/images/projects/other/Jusleap.jpg" alt="">
+                                    </div>
+
+                                    <div class="project-item">
+                                        <img src="/assets/images/projects/other/mch_franchise_shop.webp" alt="">
+                                    </div>
+
+                                    <div class="project-item">
+                                        <img src="/assets/images/projects/other/panceavalley.jpg" alt="">
+                                    </div>
+
+                                    <div class="project-item">
+                                        <img src="/assets/images/projects/other/tshirt_mockup.png" alt="">
+                                    </div>
+
+                                    <div class="project-item w-bg">
+                                        <img src="/assets/images/projects/other/tshirt_mockup_design.png" alt="">
+                                    </div>
+
+                                    <div class="project-item">
+                                        <img src="/assets/images/projects/other/smeloader.gif" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                    </a>
-                   
+                    </div>
                 </div>
             </div>
         </section>
@@ -283,10 +378,13 @@
             <p class="copyright">Made with &hearts; by <a rel="nofollow" href="https://www.linkedin.com/in/im-nithesh/" target="_blank">Nithesh Mohan</a><br>All&nbsp;rights&nbsp;reserved</p>
         </footer>
 
-        <script src="/assets/js/jquery.slim.min.js"></script>
+        
+        <script src="/vendor/jquery/jquery.min.js"></script>
+        <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="/assets/js/isotope.min.js"></script>
+        <script src="/vendor/aos/aos.js"></script>
         <script src="/assets/js/script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
         <script src="/assets/js/validate.js"></script>
-
     </body>
 </html>

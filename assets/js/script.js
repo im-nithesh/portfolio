@@ -1,3 +1,7 @@
+//Initializing AOS
+AOS.init();
+	
+
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 const sections = document.querySelectorAll('.section');
