@@ -576,6 +576,7 @@ span{
 
 .contact{
     background-color: var(--bg-color);
+    justify-items: center;
 }
 .contact h2{
     margin-bottom: 3rem;
@@ -755,7 +756,10 @@ span{
 }
 
 @media(max-width:1024px){
-    .projects .wrapper{
+    section{
+        min-height: 50vh;
+    }
+    .projects .tab-items{
         grid-template-columns: repeat(2,1fr);
     }
 }
@@ -771,6 +775,13 @@ span{
     }
     .footer{
         padding: 2rem 3%;
+    }
+    .home-img{
+        display: none;
+    }
+    .about-content ul{
+        grid-template-columns: repeat(2,1fr);
+        margin-bottom: 4rem;   
     }
     .services-container{
         padding-bottom: 7rem;
@@ -860,7 +871,7 @@ span{
         padding-bottom: 1rem;
         margin: 0 2rem;
     }
-    .projects .wrapper {
+    .projects .tab-items {
         grid-template-columns: repeat(1,1fr);
         margin-bottom: 4rem;
     }
@@ -872,6 +883,10 @@ span{
 @media(max-width:767px){
     .services-box{
         padding-bottom: 15rem;
+    }
+    .about-content ul{
+        grid-template-columns: repeat(1,1fr);
+        margin-bottom: 4rem;   
     }
     .success-message .card, .error-message .card{
         max-width: 90%;

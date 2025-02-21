@@ -1,5 +1,12 @@
 //Initializing AOS
-AOS.init();
+AOS.init({
+    offset: (jQuery(window).height() * .25),
+    delay: 400,
+    duration: 700,
+    easing: 'ease-out-back',
+    anchorPlacement: 'bottom-center'
+    
+  });
 	
 
 let menuIcon = document.querySelector('#menu-icon');
